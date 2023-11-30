@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --text: #e7e7e0;
+  --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+/* body {
+  background-image: var(--bs-gradient);
+} */
+
+#logo {
+  width: 4rem;
+}
+
+.cont {
+  min-height: 130vh;
+}
+
+@media (max-width: 576px) {
+  .cont {
+    min-height: auto;
+  }
+}
+
+
+.orderForm{
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+
+}
+
+
+
+
+.form-container{
+ /* background: #ecf0f3; */
+ padding: 40px;
+ border-radius: 20px;
+ box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+
+header{
+  /* height: 40rem; */
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+}
+
+.card-img-top{
+  height: 6rem;
+}

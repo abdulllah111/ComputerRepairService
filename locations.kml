@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for Компьютерный мастер на дом.</name>
+		<atom:author>
+			<atom:name>abdul-arabp</atom:name>
+		</atom:author>
+		<atom:link rel="related" href="https://master.abdul-arabp.site" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[Компьютерный мастер на дом]]></name>
+				<address><![CDATA[ул. Кирова, 3А, Чишмы, Респ. Башкортостан, 452160, Russia]]></address>
+				<phoneNumber><![CDATA[ 79196153646]]></phoneNumber>
+				<description><![CDATA[]]></description>
+				<Point>
+					<coordinates>55.374012,54.588017,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>
