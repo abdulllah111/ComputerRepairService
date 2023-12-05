@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2018-07-17 12:10">
+  <shop>
+    <name>Абдул Темирбеков</name>
+    <company>Abdul.Arabp</company>
+    <url>https://master.abdul-arabp.site</url>
+    <email>nasimhamdamov2017@mail.ru</email>
+    <currencies>
+      <currency id="RUR" rate="1" />
+    </currencies>
+    <categories>
+      <category id="1">Исполнитель</category>
+      <category id="2" parentId="1">Ремонт компьютеров и ноутбуков</category>
+      <category id="3" parentId="1">Выезд квалифицированного мастера</category>
+      <category id="4" parentId="2">Диагностика компьютера</category>
+      <category id="5" parentId="2">Компьютерная помощь</category>
+      <category id="6" parentId="2">Установка и переустановка Windows</category>
+
+    </categories>
+    <!--Добавили sets по сравнению с обычным YML-->
+    <sets>
+      <set id="s1">
+        <name>Выезд компьютерного мастера на дом в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s2">
+        <name>Установка и переустановка Windows 10, 11, 7, 8, 8.1, XP в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s3">
+        <name>Компьютерная помощь в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s4">
+        <name>Устранение системных ошибок и сбоев в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s5">
+        <name>Обнаружение и удаление вредоносных программ в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s6">
+        <name>Обнаружение и удаление вредоносных программ в Чишмах</name>
+        <url></url>
+      </set>
+      <set id="s7">
+        <name>Установка и обновление драйверов для всех компонентов в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s8">
+        <name>Очистка от ненужных файлов и настройка системы в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s9">
+        <name>Подробный анализ работы компьютера и выявление проблем в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s10">
+        <name>Установка и настройка надежного антивирусного программного обеспечения в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s11">
+        <name>Установка и настройка программ в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s12">
+        <name>Установка и настройка сетевого подключения в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s13">
+        <name>Установка и настройка офисных приложений в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s14">
+        <name>Восстановление забытых паролей в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+      <set id="s15">
+        <name>Консультация по вопросам компьютера и обучение пользователя в Чишмах</name>
+        <url>https://master.abdul-arabp.site/</url>
+      </set>
+    </sets>
+    <offers>
+      <offer id="1">
+        <name>Абдул Т.</name>
+        <url>https://master.abdul-arabp.site/#orderForm</url>
+        <price from="true">500</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <set-ids>s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15</set-ids><!--Можно указать и несколько сетов через запятую-->
+        <picture>https://master.abdul-arabp.site/favicon.ico</picture>
+        <description>Ремонт компьютеров и ноутбуков с выездом на дом или в офис в Чишмах</description>
+        <!--Этот набор параметров обязателен-->
+        <param name="Рейтинг">5.0</param>
+        <param name="Число отзывов">23</param>
+        <param name="Годы опыта">8</param>
+        <param name="Регион">Чишмы</param>
+        <param name="Конверсия">1.935</param><!--Это произвольное число, оно не обязано быть от 0 до 1-->
+        <!--Этот набор параметров необязателен-->
+        <param name="Выезд на дом">да</param>
+        <param name="Работа по договору">да</param>
+        <param name="Наличный расчет">да</param>
+        <param name="Безналичный расчет">да</param>
+        <param name="Ссылка на создание заказа">https://master.abdul-arabp.site/#orderForm</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
