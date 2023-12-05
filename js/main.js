@@ -1,13 +1,23 @@
 var template =
-  '<div class="col-md">' +
-  '<div class="card h-100">' +
-  '<div class="card-body">' +
-  '<img src="${icon}" alt="Ремонт компьютеров и ноутбуков" class="card-img-top mb-4">' +
-  '<h5 class="card-title">${title}</h5>' +
-  '<p class="card-text text-muted">${desc}</p>' +
-  // '<p class="card-text text-muted">${price}</p>' +
-  "</div>" +
-  '<div class="card-footer text-center text-muted">${price}' +
+  '<div itemscope itemtype="http://schema.org/Product" class="col-md"> ' +
+  '<div class="card h-100"> ' +
+  '<div class="card-body"> ' +
+  "<img " +
+  'src="${icon}" ' +
+  'class="card-img-top mb-4" ' +
+  'alt="Ремонт компьютеров и ноутбуков" ' +
+  '/> '+
+' <h5 class="card-title"><span itemprop="name">${title}</span></h5> ' +
+  '<span itemprop="description"> ' +
+  '<p class="card-text text-muted">${desc}</p> ' +
+  "</span> " +
+"</div> " +
+  '<div class="card-footer text-center text-muted"> ' +
+  '<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"> ' +
+  '<span itemprop="price">${price}</span> ' +
+  '<span itemprop="priceCurrency">RUB</span> ' +
+  '<link itemprop="availability" href="http://schema.org/InStock"/> ' +
+  "</span>" +
   "</div>" +
   "</div>" +
   "</div>";
@@ -172,27 +182,20 @@ $(function () {
       isShow = false;
     }
   });
-
 });
 
-
-
 // Обработчик клика по кнопке
-$('#call-master').on('click', function() {
-
+$("#call-master").on("click", function () {
   // Анимированный скролл до формы
-  $('html, body').animate({
-    scrollTop: $("#orderForm").offset().top
-  }, 100); 
-
-})
-
-
+  $("html, body").animate(
+    {
+      scrollTop: $("#orderForm").offset().top,
+    },
+    100
+  );
+});
 
 $(document).ready(function () {
-
-
-
   $("#post-form").validate({
     rules: {
       name: {
@@ -202,7 +205,7 @@ $(document).ready(function () {
       address: {
         required: true,
         number: false,
-      }
+      },
     },
     messages: {
       name: {
@@ -210,24 +213,27 @@ $(document).ready(function () {
       },
       address: {
         required: "Это поле обязательно",
-      }
+      },
     },
     submitHandler: function (event, validator) {
       var errors = validator.errors;
       if (!errors) {
-        on_click()
+        on_click();
       }
     },
   });
 });
 
-function on_click(){
+function on_click() {
   var name = $("#name").val();
   var address = $("#address").val();
 
-  url = "https://wa.me/79196153646?text=Здравстуйте, мне нужен мастер по ремонту компьютеров."+
-  " %0A Мое имя: " + name +
-  " %0A Адрес: " + address;
+  url =
+    "https://wa.me/79196153646?text=Здравстуйте, мне нужен мастер по ремонту компьютеров." +
+    " %0A Мое имя: " +
+    name +
+    " %0A Адрес: " +
+    address;
   // Открываем чат
   window.open(url);
 }
